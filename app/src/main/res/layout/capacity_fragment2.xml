@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layoutDirection="ltr"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1">
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="100dp"
+
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="40">
+
+                <ImageView
+                    android:id="@+id/person1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/ic_person_gray" />
+
+                <ImageView
+                    android:id="@+id/person2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/ic_person_gray" />
+
+                <ImageView
+                    android:id="@+id/person3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/ic_person_gray" />
+
+                <ImageView
+                    android:id="@+id/person4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:srcCompat="@drawable/ic_person_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/capacity_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="30">
+
+                <ImageButton
+                    android:id="@+id/minuse_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="32dp"
+
+                    android:background="@drawable/circle_shape_grey"
+                    app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+                <Button
+                    android:id="@+id/capacity"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_shape_yellow"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="70dp" />
+
+                <ImageButton
+                    android:id="@+id/pluse_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="32dp"
+                    android:background="@drawable/circle_shape_grey"
+                    app:srcCompat="@drawable/ic_add_black_24dp" />
+
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/title"-->
+            <!--android:id=""/>-->
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capacity_linear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="نفر سوارن"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_black_lines"
+                android:padding="16dp"
+                android:text="لطفا پس از سوار شدن یا پیاده شدن هر مسافر ظرفیت افرادی که سوار هستند را با کلیک بر روی علامت افزایش و کاهش مشخص کنید."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="56dp"
+
+              android:layout_alignParentBottom="true"
+              android:id="@+id/state_btn"
+              android:textColor="@color/white"
+              android:textSize="15dp"
+              android:background="@color/blue_700"
+              android:text="فعال"
+              />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

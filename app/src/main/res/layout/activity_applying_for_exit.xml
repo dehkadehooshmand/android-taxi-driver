@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrount_gradient"
+    tools:context=".ApplyingForExitActivity"
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/pro_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        app:srcCompat="@drawable/ic_man" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@id/pro_img"
+        android:orientation="vertical"
+        android:weightSum="30">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:text=""
+            android:id="@+id/txt_name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:text=""
+            android:id="@+id/txt_mobile"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:id="@+id/txt_code"
+            android:text=""
+            android:textColor="@color/white"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pro_img"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:text="موضوع درخواست :"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/demand"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/edittextwhitebackground"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/datetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/demand"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+
+        android:text="تاریخ درخواست :"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/datetitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:weightSum="24">
+
+        <TextView
+            android:id="@+id/untill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="10"
+            android:background="@drawable/edittextwhitebackground"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="97/12/28"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="تا"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="10"
+            android:background="@drawable/edittextwhitebackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="97/12/1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="از"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginRight="32dp"
+        android:background="@drawable/edittextwhitebackground"
+        android:textSize="15dp">
+
+        <TextView
+            android:id="@+id/title_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edittextbackgroundprimary"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp"
+            android:text="انتخاب شهر :"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/txt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/title_city" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pelak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_confrim"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_profile_back"
+        android:text="ثبت درخواست "
+        android:textColor="@color/white" />
+</RelativeLayout>

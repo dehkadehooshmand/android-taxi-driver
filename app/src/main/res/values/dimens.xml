@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_size">50dp</dimen>
+    <dimen name="margin_right_menu">-15dp</dimen>
+    <dimen name="pin_dimens">250dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_top_driver">40dp</dimen>
+    <dimen name="select_pic_with">80dp</dimen>
+    <dimen name="form_textsize">14dp</dimen>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        >
+        <!--<item-->
+            <!--android:id="@+id/messages"-->
+            <!--android:title="پیام ها"-->
+
+            <!--android:iconTintMode="add"-->
+            <!--android:icon="@drawable/ic_interview"-->
+
+            <!--/>-->
+        <!--<item-->
+
+            <!--android:id="@+id/travel_list"-->
+            <!--android:icon="@drawable/ic_destination"-->
+            <!--android:title="لیست سفرها"-->
+
+            <!--/>-->
+        <item
+            android:id="@+id/qrcode"
+            android:title="بارکد"
+            android:icon="@drawable/ic_qr_code"
+            
+            />
+
+
+
+        <item
+            android:id="@+id/profile"
+            android:title="مشاهده پروفایل"
+            android:icon="@drawable/ic_personal_info_menu"
+
+            />
+
+        <item
+            android:id="@+id/applingfor_exit"
+            android:title="درخواست خروج از خط"
+            android:icon="@drawable/ic_writing"
+
+            />
+
+        <item
+            android:id="@+id/exit"
+            android:title="خروج از حساب کاربری"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            />
+
+    </group>
+
+
+</menu>

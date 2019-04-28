@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="4dp"
+    android:layoutDirection="ltr"
+    android:layout_marginRight="8dp">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+
+    android:background="@drawable/message_shape"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:text="تایتل پیام"
+android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:text="19.8.97"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/body"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="با سلام نسخه جدید برنامه را میتوانید با مراجعه به ..."
+        />
+</RelativeLayout>

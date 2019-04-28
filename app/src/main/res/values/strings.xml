@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">راننده</string>
+    <string name="proname">ممد ممدی</string>
+    <string name="mobile">091214545</string>
+    <string name="sheba">IR_23135215145145</string>
+    <string name="slide4_1">تعیین ظرفیت</string>
+    <string name="slide4_2">تعداد صندلی خالی ماشینت رو مشخص کن تا مسافرهای تو راه ببینن چه قدر جا داری.</string>
+    <string name="slide1_1">درخواست خروج از خط</string>
+    <string name="slide1_2">بدون نیاز به مراجعه به تاکسی رانی درخواست خروج از خط ثبت کن.</string>
+    <string name="slide2_1">مشاهده خط</string>
+    <string name="slide2_2">خط خودت و مسافرهات رو روی نقشه ببین.</string>
+    <string name="slide3_1">دریافت کرایه</string>
+    <string name="slide3_2">اگه مشکل پول خورد داری کرایه ات رو اینترنتی دریافت کن.</string>
+</resources>

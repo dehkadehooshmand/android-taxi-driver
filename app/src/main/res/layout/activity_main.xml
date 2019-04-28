@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=""
+    android:layoutDirection="ltr">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.view.ViewPager
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+
+    <segmented_control.widget.custom.android.com.segmentedcontrol.SegmentedControl
+        android:id="@+id/segmented_control"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        app:columnCount="2"
+        app:distributeEvenly="true"
+        app:radius="12dp"
+        app:segments="@array/titles"
+
+        app:selectedBackgroundColor="@color/colorPrimary"
+        app:selectedStrokeColor="@color/blackyavash"
+        app:selectedTextColor="@color/white"
+        app:textSize="15dp"
+        app:textVerticalPadding="10dp"
+
+        app:unSelectedBackgroundColor="@color/white"
+        app:unSelectedStrokeColor="@color/blackyavash"
+        app:unSelectedTextColor="@color/blackyavash" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_below="@+id/segmented_control"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/margin_right_menu"
+        app:srcCompat="@drawable/ic_menu_5" />
+</RelativeLayout>

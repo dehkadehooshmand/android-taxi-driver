@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "978727020342",
+    "firebase_url": "https://driver-5471b.firebaseio.com",
+    "project_id": "driver-5471b",
+    "storage_bucket": "driver-5471b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978727020342:android:d0374732aea94401",
+        "android_client_info": {
+          "package_name": "ir.idpz.taxi.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978727020342-oskg4n5k3k96pegjrjtbvpcuuincfb4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4wOHqP0lU72SmoClGy9rJokBLwRpC3y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978727020342-oskg4n5k3k96pegjrjtbvpcuuincfb4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
