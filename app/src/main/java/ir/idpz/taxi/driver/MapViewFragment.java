@@ -153,7 +153,8 @@ public class MapViewFragment extends Fragment implements LocationListener, Googl
         currentlocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getMyLocation();
+              //  getMyLocation();
+                getLastLocation();
             }
         });
 
@@ -206,50 +207,6 @@ public class MapViewFragment extends Fragment implements LocationListener, Googl
         return f;
     }
 
-    private Location getLastLocation() {
-        if (ContextCompat.checkSelfPermission(getAppContext(),
-                Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-
-            // Should we show an explanation?
-            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
-                    Manifest.permission.ACCESS_FINE_LOCATION)) {
-                // Show an expanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's Response! After the user
-                // sees the explanation, try again to request the permission.
-            } else {
-                // No explanation needed, we can request the permission.
-                final int MY_PERMISSIONS_REQUEST_COARSE_LOCATION = 124;
-                final int MY_PERMISSIONS_REQUEST_FINE_LOCATION = 123;
-
-                ActivityCompat.requestPermissions(getActivity(),
-                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                        MY_PERMISSIONS_REQUEST_FINE_LOCATION);
-                // MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION is an
-                // app-defined int constant. The callback method gets the
-                // result of the request.
-            }
-        }
-        try {
-            mLastKnownLocation = LocationServices.
-                    FusedLocationApi.getLastLocation(mGoogleApiClient);
-            if (mLastKnownLocation != null) {
-                LatLng latLng = new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude());
-//                StaticVars.getCurrentRequest().setLat(mLastKnownLocation.getLatitude());
-//                StaticVars.getCurrentRequest().setLng(mLastKnownLocation.getLongitude());
-
-                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 18);
-                googleMap.animateCamera(cameraUpdate);
-                onLocationChanged(mLastKnownLocation);
-
-
-            }
-        } catch (SecurityException e) {
-
-        }
-
-        return mLastKnownLocation;
-    }
 
     protected synchronized void buildGoogleApiClient() {
         mGoogleApiClient = new GoogleApiClient.Builder(getAppContext())
@@ -419,8 +376,52 @@ public class MapViewFragment extends Fragment implements LocationListener, Googl
         }
 
 
-
-    public Location getMyLocation() {
+//
+//    public Location getMyLocation() {
+//
+//        if (ContextCompat.checkSelfPermission(mContext,
+//                Manifest.permission.ACCESS_FINE_LOCATION)
+//                != PackageManager.PERMISSION_GRANTED) {
+//
+//            // Should we show an explanation?
+//            if (ActivityCompat.shouldShowRequestPermissionRationale((Activity) mContext,
+//                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+//                // Show an expanation to the user *asynchronously* -- don't block
+//                // this thread waiting for the user's Response! After the user
+//                // sees the explanation, try again to request the permission.
+//            } else {
+//                // No explanation needed, we can request the permission.
+//                final int MY_PERMISSIONS_REQUEST_COARSE_LOCATION = 124;
+//                final int MY_PERMISSIONS_REQUEST_FINE_LOCATION = 123;
+//
+//                ActivityCompat.requestPermissions((Activity) mContext,
+//                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+//                        MY_PERMISSIONS_REQUEST_FINE_LOCATION);
+//                // MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION is an
+//                // app-defined int constant. The callback method gets the
+//                // result of the request.
+//            }
+//        }
+//        try {
+//            mLastKnownLocation = LocationServices.
+//                    FusedLocationApi.getLastLocation(mGoogleApiClient);
+//            if (mLastKnownLocation != null) {
+//                LatLng latLng = new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude());
+////                StaticVars.getCurrentRequest().setLat(mLastKnownLocation.getLatitude());
+////                StaticVars.getCurrentRequest().setLng(mLastKnownLocation.getLongitude());
+//
+//                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 19);
+//                googleMap.animateCamera(cameraUpdate);
+//                onLocationChanged(mLastKnownLocation);
+//
+//            }
+//        } catch (SecurityException e) {
+//            Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_LONG).show();
+//        }
+//
+//        return mLastKnownLocation;
+//    }
+    private void getLastLocation() {
 
         if (ContextCompat.checkSelfPermission(mContext,
                 Manifest.permission.ACCESS_FINE_LOCATION)
@@ -446,22 +447,25 @@ public class MapViewFragment extends Fragment implements LocationListener, Googl
             }
         }
         try {
-            mLastKnownLocation = LocationServices.
+            Location mLastKnownLocation = LocationServices.
                     FusedLocationApi.getLastLocation(mGoogleApiClient);
             if (mLastKnownLocation != null) {
                 LatLng latLng = new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude());
 //                StaticVars.getCurrentRequest().setLat(mLastKnownLocation.getLatitude());
 //                StaticVars.getCurrentRequest().setLng(mLastKnownLocation.getLongitude());
 
+                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 19);
+                googleMap.animateCamera(cameraUpdate);
+                onLocationChanged(mLastKnownLocation);
+
 
             }
-        } catch (SecurityException e) {
+        } catch (Exception e) {
             Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_LONG).show();
         }
 
-        return mLastKnownLocation;
-    }
 
+    }
 
 
         }

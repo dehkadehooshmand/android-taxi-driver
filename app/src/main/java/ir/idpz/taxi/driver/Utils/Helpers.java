@@ -108,7 +108,7 @@ public class Helpers {
     public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivity = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivity == null) {
+            if (connectivity == null) {
             return false;
         } else {
             NetworkInfo[] info = connectivity.getAllNetworkInfo();

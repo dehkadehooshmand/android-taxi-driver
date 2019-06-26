@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        File Item2 = new File("/data/data/" + getPackageName() + "/shared_prefs/verified_driver.xml");
+        File Item2 = new File("/data/data/" + getPackageName() + "/shared_prefs/verified_driver1.xml");
         if (Item2.exists()) {
 
             Intent i1 = new Intent(getApplicationContext(), MainActivity.class);

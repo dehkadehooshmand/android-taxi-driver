@@ -392,6 +392,8 @@ public class CapacityFragment extends Fragment {
     public CapacityFragment(Context mContext) {
         this.context = mContext;
     }
+
+
 //@Override
 //    public void attachBaseContext(Context newBase) {
 //        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));

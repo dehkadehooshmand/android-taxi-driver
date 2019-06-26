@@ -1,5 +1,6 @@
 package ir.idpz.taxi.driver;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Point;
@@ -37,6 +38,8 @@ public class QrCodeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_qr_code);
         qrImage = (ImageView) findViewById(R.id.QR_Image);
         arrow_back=findViewById(R.id.arrow_back);
@@ -90,11 +93,13 @@ public class QrCodeActivity extends AppCompatActivity {
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
     }
+
+
+
 }

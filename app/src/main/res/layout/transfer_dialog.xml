@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_vertical"
+        android:text="حداقل مبلغ قابل انتقال\n5000 تومان است"
+        android:textColor="@color/dark"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/txtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/layout_corners_shape"
+        android:gravity="left"
+        android:hint="شماره موبایل"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/dark"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/cnp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgreen2ound"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="تومان"
+            android:textColor="@color/dark"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="250000"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:textColor="@color/material_green"
+            android:textSize="32dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cnp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back_btn_green"
+        android:inputType="number"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="انتقال پول"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

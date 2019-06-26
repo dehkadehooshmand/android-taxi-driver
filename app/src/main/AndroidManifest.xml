@@ -16,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <service android:name="ir.idpz.taxi.driver.CloudMessage.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
@@ -49,7 +50,11 @@
         <activity
             android:name="ir.idpz.taxi.driver.LoginActivity"
             android:theme="@style/AppTheme3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="ir.idpz.taxi.driver.VerificationActivity"
@@ -77,11 +82,7 @@
 
         </activity>
         <activity android:name="ir.idpz.taxi.driver.WelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

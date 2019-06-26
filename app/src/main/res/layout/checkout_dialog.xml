@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_vertical"
+        android:text="حداقل مبلغ قابل برداشت\n10000 تومان"
+        android:textColor="@color/dark"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:id="@+id/cnp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatus"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/backgreen2ound"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="تومان"
+            android:textColor="@color/dark"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="250000"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:textColor="@color/material_green"
+            android:textSize="32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cnp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/backgreen2ound"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="شماره کارت"
+            android:textColor="@color/dark" />
+
+        <EditText
+            android:id="@+id/tbCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="01234-56789"
+            android:gravity="center"
+            android:hint="0000-0000-0000-0000"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="19"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/dark"
+            android:textSize="23dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="تاریخ انقضای کارت"
+            android:textColor="@color/dark" />
+
+        <EditText
+            android:id="@+id/tbDateNumber"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:digits="01234-56789"
+            android:gravity="center"
+            android:hint="00-00"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/dark"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="شماره شبا بدون IR"
+            android:textColor="@color/dark" />
+
+        <EditText
+            android:id="@+id/tbShebaNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="01234-56789"
+            android:gravity="center"
+            android:hint="2569874532154865958"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="26"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/dark"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ln"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back_btn_green"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="درخواست تسویه"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

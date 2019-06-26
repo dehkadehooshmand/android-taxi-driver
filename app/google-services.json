@@ -1,34 +1,108 @@
 {
   "project_info": {
-    "project_number": "978727020342",
-    "firebase_url": "https://driver-5471b.firebaseio.com",
-    "project_id": "driver-5471b",
-    "storage_bucket": "driver-5471b.appspot.com"
+    "project_number": "158041777402",
+    "firebase_url": "https://reliable-airway-157805.firebaseio.com",
+    "project_id": "reliable-airway-157805",
+    "storage_bucket": "reliable-airway-157805.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:978727020342:android:d0374732aea94401",
+        "mobilesdk_app_id": "1:158041777402:android:d696be9d466a54e0",
         "android_client_info": {
-          "package_name": "ir.idpz.taxi.driver"
+          "package_name": "com.idpz.instacity"
         }
       },
       "oauth_client": [
         {
-          "client_id": "978727020342-oskg4n5k3k96pegjrjtbvpcuuincfb4s.apps.googleusercontent.com",
+          "client_id": "158041777402-v96o7qjjm4msc05a5e2avsoqfh6qa88m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idpz.instacity",
+            "certificate_hash": "f4be01cc7a69301db188a231f8446ef413d57697"
+          }
+        },
+        {
+          "client_id": "158041777402-buiov8ngfhat467qp98n63oiui3e30d7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC4wOHqP0lU72SmoClGy9rJokBLwRpC3y4"
+          "current_key": "AIzaSyA3OhkVfgLRQXlmGvtFN0ZClcplNcL-cC4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "978727020342-oskg4n5k3k96pegjrjtbvpcuuincfb4s.apps.googleusercontent.com",
+              "client_id": "158041777402-buiov8ngfhat467qp98n63oiui3e30d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158041777402:android:d0374732aea94401",
+        "android_client_info": {
+          "package_name": "ir.idpz.taxi.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158041777402-bo9u593j6k03o431827o8q4hsrna2r3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.idpz.taxi.driver",
+            "certificate_hash": "1339e52bd21da1a82e9bc634fb09356b8b039d78"
+          }
+        },
+        {
+          "client_id": "158041777402-buiov8ngfhat467qp98n63oiui3e30d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3OhkVfgLRQXlmGvtFN0ZClcplNcL-cC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158041777402-buiov8ngfhat467qp98n63oiui3e30d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158041777402:android:d42f28e10ba3b637",
+        "android_client_info": {
+          "package_name": "ir.idpz.taxi.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158041777402-buiov8ngfhat467qp98n63oiui3e30d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3OhkVfgLRQXlmGvtFN0ZClcplNcL-cC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158041777402-buiov8ngfhat467qp98n63oiui3e30d7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

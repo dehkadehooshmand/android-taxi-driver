@@ -234,7 +234,7 @@ public class VerificationActivity extends AppCompatActivity implements OTPListen
 
         params.put("mobile", mobile);
         params.put("code", code);
-        params.put("api_token","zU79Rd6LOR3bWGSibmFVhnX1gsb4GfLBysWx88dxLcR5VVrPg8jjMDK8RfmqB9kR");
+        params.put("api_token", "zU79Rd6LOR3bWGSibmFVhnX1gsb4GfLBysWx88dxLcR5VVrPg8jjMDK8RfmqB9kR");
 
 
         Helpers.client.post(Helpers.baseUrl + "taxi_enter", params, new TextHttpResponseHandler() {
@@ -250,11 +250,11 @@ public class VerificationActivity extends AppCompatActivity implements OTPListen
                     pd.dismiss();
                     //           if (responseString.contains("ok")) {
 
-                     UserTaxi userTaxi=Helpers.gson.fromJson(responseString, UserTaxi.class);
+                    UserTaxi userTaxi = Helpers.gson.fromJson(responseString, UserTaxi.class);
 
-                     Helpers.addToSharePrf("api_token",userTaxi.getApi_token());
+                    Helpers.addToSharePrf("api_token", userTaxi.getApi_token());
 
-                     Helpers.addToSharePrf("user_id",userTaxi.getTaxiId().toString());
+                    Helpers.addToSharePrf("user_id", userTaxi.getTaxiId().toString());
                     Helpers.setUserTaxi(responseString);
 
 //                    JsonParser jsonParser = new JsonParser();
